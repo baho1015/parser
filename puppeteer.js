@@ -82,7 +82,7 @@ async function run(url, region) {
 
 const [url, region] = process.argv.slice(2);
 if (!url || !region) {
-    ('Не указан <url> <region>');
+    console.error('Не указан <url> <region>');
     process.exit(1);
 
 }
